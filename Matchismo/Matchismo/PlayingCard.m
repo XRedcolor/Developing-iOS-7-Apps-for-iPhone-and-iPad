@@ -13,7 +13,7 @@
 - (NSString *)contents
 {
     NSArray *rankStrings = [PlayingCard rankStrings];
-    return [rankStrings[self.rank] stringByAppendingString:self.suit];
+    return [self.suit stringByAppendingString:rankStrings[self.rank]];
 }
 
 @synthesize suit = _suit; // because we provide setter AND getter
