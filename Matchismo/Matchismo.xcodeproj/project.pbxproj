@@ -15,6 +15,7 @@
 		3BA264D71B6228B20031B1C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA264D51B6228B20031B1C8 /* LaunchScreen.xib */; };
 		3BA264E31B6228B20031B1C8 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA264E21B6228B20031B1C8 /* MatchismoTests.m */; };
 		3BA264EE1B6229A30031B1C8 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA264ED1B6229A30031B1C8 /* Card.m */; };
+		3BA264F21B622AB40031B1C8 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA264F11B622AB40031B1C8 /* PlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		3BA264E21B6228B20031B1C8 /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
 		3BA264EC1B6229A30031B1C8 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		3BA264ED1B6229A30031B1C8 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		3BA264F01B622AB40031B1C8 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		3BA264F11B622AB40031B1C8 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 			children = (
 				3BA264EC1B6229A30031B1C8 /* Card.h */,
 				3BA264ED1B6229A30031B1C8 /* Card.m */,
+				3BA264F01B622AB40031B1C8 /* PlayingCard.h */,
+				3BA264F11B622AB40031B1C8 /* PlayingCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				3BA264CF1B6228B20031B1C8 /* ViewController.m in Sources */,
 				3BA264CC1B6228B20031B1C8 /* AppDelegate.m in Sources */,
 				3BA264C91B6228B20031B1C8 /* main.m in Sources */,
+				3BA264F21B622AB40031B1C8 /* PlayingCard.m in Sources */,
 				3BA264EE1B6229A30031B1C8 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

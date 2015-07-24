@@ -23,4 +23,13 @@
  */
 @property (nonatomic, getter=isMatched) BOOL matched;
 
+/**
+ *  cards 进行匹配
+ *
+ *  @param otherCards 其他 cards
+ *
+ *  @return 匹配得分
+ */
+- (NSInteger)match:(NSArray *)otherCards;
+
 @end
