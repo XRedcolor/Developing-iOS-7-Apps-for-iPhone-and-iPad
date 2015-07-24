@@ -14,6 +14,7 @@
 		3BA264D41B6228B20031B1C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA264D31B6228B20031B1C8 /* Images.xcassets */; };
 		3BA264D71B6228B20031B1C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA264D51B6228B20031B1C8 /* LaunchScreen.xib */; };
 		3BA264E31B6228B20031B1C8 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA264E21B6228B20031B1C8 /* MatchismoTests.m */; };
+		3BA264EE1B6229A30031B1C8 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA264ED1B6229A30031B1C8 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3BA264DC1B6228B20031B1C8 /* MatchismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA264E11B6228B20031B1C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA264E21B6228B20031B1C8 /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		3BA264EC1B6229A30031B1C8 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		3BA264ED1B6229A30031B1C8 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,10 @@
 		3BA264C51B6228B20031B1C8 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				3BA264CA1B6228B20031B1C8 /* AppDelegate.h */,
-				3BA264CB1B6228B20031B1C8 /* AppDelegate.m */,
 				3BA264CD1B6228B20031B1C8 /* ViewController.h */,
 				3BA264CE1B6228B20031B1C8 /* ViewController.m */,
 				3BA264D01B6228B20031B1C8 /* Main.storyboard */,
-				3BA264D31B6228B20031B1C8 /* Images.xcassets */,
-				3BA264D51B6228B20031B1C8 /* LaunchScreen.xib */,
+				3BA264EF1B6229A90031B1C8 /* Model */,
 				3BA264C61B6228B20031B1C8 /* Supporting Files */,
 			);
 			path = Matchismo;
@@ -96,6 +96,10 @@
 		3BA264C61B6228B20031B1C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3BA264D31B6228B20031B1C8 /* Images.xcassets */,
+				3BA264D51B6228B20031B1C8 /* LaunchScreen.xib */,
+				3BA264CA1B6228B20031B1C8 /* AppDelegate.h */,
+				3BA264CB1B6228B20031B1C8 /* AppDelegate.m */,
 				3BA264C71B6228B20031B1C8 /* Info.plist */,
 				3BA264C81B6228B20031B1C8 /* main.m */,
 			);
@@ -117,6 +121,15 @@
 				3BA264E11B6228B20031B1C8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA264EF1B6229A90031B1C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BA264EC1B6229A30031B1C8 /* Card.h */,
+				3BA264ED1B6229A30031B1C8 /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				3BA264CF1B6228B20031B1C8 /* ViewController.m in Sources */,
 				3BA264CC1B6228B20031B1C8 /* AppDelegate.m in Sources */,
 				3BA264C91B6228B20031B1C8 /* main.m in Sources */,
+				3BA264EE1B6229A30031B1C8 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
