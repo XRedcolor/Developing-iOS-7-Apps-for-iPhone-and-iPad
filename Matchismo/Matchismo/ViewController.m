@@ -14,20 +14,24 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
-
-@property (nonatomic, strong) PlayingCardDeck *playingCardDeck;
+@property (nonatomic, strong) Deck *deck;
 
 @end
 
 @implementation ViewController
 
-- (PlayingCardDeck *)playingCardDeck
+- (Deck *)deck
 {
-    if (_playingCardDeck == nil) {
-        _playingCardDeck = [[PlayingCardDeck alloc] init];
+    if (_deck == nil) {
+        _deck = [self createDeck];
     }
     
-    return _playingCardDeck;
+    return _deck;
+}
+
+- (Deck *)createDeck
+{
+    return [[PlayingCardDeck alloc] init];
 }
 
 - (void)setFlipCount:(int)flipCount
@@ -43,12 +47,18 @@
     if (button.currentTitle.length) {
         [button setBackgroundImage:[UIImage imageNamed:@"stanford"] forState:UIControlStateNormal];
         [button setTitle:@"" forState:UIControlStateNormal];
+        
+        self.flipCount++;
     } else {
-        [button setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-        [button setTitle:[[self.playingCardDeck drawRandomCard] contents] forState:UIControlStateNormal];
+        Card *randomCard = [self.deck drawRandomCard];
+        
+        if (randomCard) {
+            [button setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+            [button setTitle:randomCard.contents forState:UIControlStateNormal];
+            
+            self.flipCount++;
+        }
     }
-    
-    self.flipCount++;
 }
 
 @end
