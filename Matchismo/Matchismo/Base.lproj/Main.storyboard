@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,220 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov4-oi-hqt" userLabel="Card 1 Button">
+                                <rect key="frame" x="24" y="28" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RTw-9d-Ba7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNI-YL-jWb" userLabel="Card 2 Button">
+                                <rect key="frame" x="96" y="28" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xqo-WG-Ms6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REi-za-NVZ" userLabel="Card 3 Button">
+                                <rect key="frame" x="168" y="28" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hyz-bN-L5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-qy-Ehs" userLabel="Card 4 Button">
+                                <rect key="frame" x="240" y="28" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="96X-Tc-LQk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGk-gx-jkm" userLabel="Card 5 Button">
+                                <rect key="frame" x="24" y="132" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="two-VR-vCO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dj-8A-xLv" userLabel="Card 6 Button">
+                                <rect key="frame" x="96" y="132" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ANN-GT-8Xy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEV-Ka-DJj" userLabel="Card 7 Button">
+                                <rect key="frame" x="168" y="132" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ue7-iQ-QQW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYs-9q-5WB" userLabel="Card 8 Button">
+                                <rect key="frame" x="240" y="132" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Es-UO-n6O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRb-Nh-ff9" userLabel="Card 9 Button">
+                                <rect key="frame" x="24" y="236" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EBk-oO-EQn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYk-9x-H8N" userLabel="Card 10 Button">
+                                <rect key="frame" x="96" y="236" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gHg-bj-ojV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAE-DR-Z17" userLabel="Card 11 Button">
+                                <rect key="frame" x="168" y="236" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6rS-os-RBc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QJ-cO-rMl" userLabel="Card 12 Button">
+                                <rect key="frame" x="240" y="236" width="64" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cyt-jv-eSf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSk-ah-gUX" userLabel="Score Label">
+                                <rect key="frame" x="24" y="559.5" width="552" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UGk-gx-jkm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="3Uf-5E-VYK"/>
+                            <constraint firstItem="4QJ-cO-rMl" firstAttribute="leading" secondItem="LAE-DR-Z17" secondAttribute="trailing" constant="8" id="7An-8l-ENK"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="QYk-9x-H8N" secondAttribute="width" id="7NA-38-jsY"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="Ov4-oi-hqt" secondAttribute="height" id="9WZ-h9-RL3"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="cEV-Ka-DJj" secondAttribute="width" id="Bgq-fc-ewJ"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="LAE-DR-Z17" secondAttribute="width" id="Bn0-jn-k1C"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="4QJ-cO-rMl" secondAttribute="width" id="C8b-3c-O89"/>
+                            <constraint firstItem="cEV-Ka-DJj" firstAttribute="leading" secondItem="3Dj-8A-xLv" secondAttribute="trailing" constant="8" id="CCf-Oo-bcP"/>
+                            <constraint firstItem="vDd-qy-Ehs" firstAttribute="leading" secondItem="REi-za-NVZ" secondAttribute="trailing" constant="8" id="DUR-lI-oAS"/>
+                            <constraint firstItem="zRb-Nh-ff9" firstAttribute="top" secondItem="UGk-gx-jkm" secondAttribute="bottom" constant="8" id="De2-6w-TNj"/>
+                            <constraint firstItem="vDd-qy-Ehs" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="E60-ZT-7Lj"/>
+                            <constraint firstItem="LAE-DR-Z17" firstAttribute="leading" secondItem="QYk-9x-H8N" secondAttribute="trailing" constant="8" id="FOS-8f-Nk5"/>
+                            <constraint firstItem="UGk-gx-jkm" firstAttribute="top" secondItem="Ov4-oi-hqt" secondAttribute="bottom" constant="8" id="Fo5-Pp-mtc"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="REi-za-NVZ" secondAttribute="width" id="G1K-nI-ST4"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="3Dj-8A-xLv" secondAttribute="height" id="GlE-Ld-0e3"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="vDd-qy-Ehs" secondAttribute="height" id="IEV-90-aTv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zSk-ah-gUX" secondAttribute="bottom" constant="20" id="K9k-8d-cYY"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="LAE-DR-Z17" secondAttribute="height" id="OaV-EV-FaZ"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="top" secondItem="vDd-qy-Ehs" secondAttribute="bottom" constant="8" id="QFK-Gi-Gc7"/>
+                            <constraint firstItem="zSk-ah-gUX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="QZK-qk-1mQ"/>
+                            <constraint firstItem="MNI-YL-jWb" firstAttribute="leading" secondItem="Ov4-oi-hqt" secondAttribute="trailing" constant="8" id="TCC-7J-pJm"/>
+                            <constraint firstItem="Ov4-oi-hqt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="TIY-ce-Ert"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="Ov4-oi-hqt" secondAttribute="width" id="ViK-7W-WrV"/>
+                            <constraint firstItem="QYk-9x-H8N" firstAttribute="leading" secondItem="zRb-Nh-ff9" secondAttribute="trailing" constant="8" id="Zjv-Yd-Ekj"/>
+                            <constraint firstItem="MNI-YL-jWb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="aIj-Is-UWQ"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="leading" secondItem="cEV-Ka-DJj" secondAttribute="trailing" constant="8" id="aZw-PO-Tff"/>
+                            <constraint firstItem="4QJ-cO-rMl" firstAttribute="top" secondItem="lYs-9q-5WB" secondAttribute="bottom" constant="8" id="dJt-YL-zyd"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="3Dj-8A-xLv" secondAttribute="width" id="dxq-YQ-doz"/>
+                            <constraint firstItem="Ov4-oi-hqt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="eL8-1c-rqj"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="MNI-YL-jWb" secondAttribute="width" id="gYZ-Or-VfM"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="REi-za-NVZ" secondAttribute="height" id="h5c-Nc-8ui"/>
+                            <constraint firstItem="zRb-Nh-ff9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="hv1-2Q-uiD"/>
+                            <constraint firstItem="REi-za-NVZ" firstAttribute="leading" secondItem="MNI-YL-jWb" secondAttribute="trailing" constant="8" id="iB2-eL-zZP"/>
+                            <constraint firstItem="3Dj-8A-xLv" firstAttribute="top" secondItem="MNI-YL-jWb" secondAttribute="bottom" constant="8" id="iFy-19-Nqd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zSk-ah-gUX" secondAttribute="trailing" constant="8" id="jji-vf-ulX"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="MNI-YL-jWb" secondAttribute="height" id="kPm-pv-7H3"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="zRb-Nh-ff9" secondAttribute="height" id="kZe-FY-9bi"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="zRb-Nh-ff9" secondAttribute="width" id="nLf-q2-sY9"/>
+                            <constraint firstItem="QYk-9x-H8N" firstAttribute="top" secondItem="3Dj-8A-xLv" secondAttribute="bottom" constant="8" id="nqw-No-xdC"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="vDd-qy-Ehs" secondAttribute="width" id="oNV-4o-7a8"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="4QJ-cO-rMl" secondAttribute="height" id="p9E-VF-z0d"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="QYk-9x-H8N" secondAttribute="height" id="rXu-wH-8J1"/>
+                            <constraint firstItem="LAE-DR-Z17" firstAttribute="top" secondItem="cEV-Ka-DJj" secondAttribute="bottom" constant="8" id="tim-eW-X3C"/>
+                            <constraint firstItem="cEV-Ka-DJj" firstAttribute="top" secondItem="REi-za-NVZ" secondAttribute="bottom" constant="8" id="tuV-70-KSe"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="cEV-Ka-DJj" secondAttribute="height" id="u96-b6-AgO"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="width" secondItem="UGk-gx-jkm" secondAttribute="width" id="vf9-Cs-xI4"/>
+                            <constraint firstItem="REi-za-NVZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="xZX-ic-JUv"/>
+                            <constraint firstItem="3Dj-8A-xLv" firstAttribute="leading" secondItem="UGk-gx-jkm" secondAttribute="trailing" constant="8" id="yc8-9L-Jpm"/>
+                            <constraint firstItem="lYs-9q-5WB" firstAttribute="height" secondItem="UGk-gx-jkm" secondAttribute="height" id="yxk-MF-SNR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="zSk-ah-gUX" id="wZS-oy-C6z"/>
+                        <outletCollection property="cardButtons" destination="Ov4-oi-hqt" id="tIS-W7-IcK"/>
+                        <outletCollection property="cardButtons" destination="MNI-YL-jWb" id="ZUj-0x-RMC"/>
+                        <outletCollection property="cardButtons" destination="REi-za-NVZ" id="X6h-yc-6kp"/>
+                        <outletCollection property="cardButtons" destination="vDd-qy-Ehs" id="7kc-Im-a0H"/>
+                        <outletCollection property="cardButtons" destination="UGk-gx-jkm" id="Prd-d5-JdV"/>
+                        <outletCollection property="cardButtons" destination="3Dj-8A-xLv" id="ghP-Vj-WVy"/>
+                        <outletCollection property="cardButtons" destination="cEV-Ka-DJj" id="wJi-KE-Q23"/>
+                        <outletCollection property="cardButtons" destination="lYs-9q-5WB" id="lRp-UL-iBY"/>
+                        <outletCollection property="cardButtons" destination="zRb-Nh-ff9" id="HB9-L8-JFK"/>
+                        <outletCollection property="cardButtons" destination="QYk-9x-H8N" id="uBg-3z-bbu"/>
+                        <outletCollection property="cardButtons" destination="LAE-DR-Z17" id="ink-N7-Cc0"/>
+                        <outletCollection property="cardButtons" destination="4QJ-cO-rMl" id="JT7-jD-e5d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="541" y="343"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardback" width="64" height="96"/>
+    </resources>
 </document>

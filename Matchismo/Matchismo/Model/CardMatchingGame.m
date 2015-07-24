@@ -63,11 +63,11 @@
     return self;
 }
 
-// 不匹配处罚
+// 不匹配的处罚
 static const int MISMATCH_PENALTY = 2;
-// 匹配奖金
+// 匹配的奖金
 static const int MATCH_BONUS = 4;
-// 选择花费
+// 选择的花费
 static const int COST_TO_CHOOSE = 1;
 
 /**
