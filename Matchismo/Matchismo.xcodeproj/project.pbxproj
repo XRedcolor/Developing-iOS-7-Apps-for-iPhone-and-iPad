@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA264801B61F2CA0031B1C8 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2647F1B61F2CA0031B1C8 /* CardMatchingGame.m */; };
 		3BAE01871B60D860002C2891 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE01861B60D860002C2891 /* Card.m */; };
 		3BAE018B1B60D88D002C2891 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE018A1B60D88D002C2891 /* PlayingCard.m */; };
 		3BAE018E1B60D89C002C2891 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE018D1B60D89C002C2891 /* Deck.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BA2647E1B61F2CA0031B1C8 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		3BA2647F1B61F2CA0031B1C8 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 		3BAE01851B60D85F002C2891 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		3BAE01861B60D860002C2891 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		3BAE01891B60D88D002C2891 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 		3BAE01881B60D86E002C2891 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3BA2647E1B61F2CA0031B1C8 /* CardMatchingGame.h */,
+				3BA2647F1B61F2CA0031B1C8 /* CardMatchingGame.m */,
 				3BAE01851B60D85F002C2891 /* Card.h */,
 				3BAE01861B60D860002C2891 /* Card.m */,
 				3BAE01891B60D88D002C2891 /* PlayingCard.h */,
@@ -251,6 +256,7 @@
 				3BC6FBF61B60974C00ABEB0C /* AppDelegate.m in Sources */,
 				3BC6FBF31B60974C00ABEB0C /* main.m in Sources */,
 				3BAE018B1B60D88D002C2891 /* PlayingCard.m in Sources */,
+				3BA264801B61F2CA0031B1C8 /* CardMatchingGame.m in Sources */,
 				3BAE01911B60D8C5002C2891 /* PlayingCardDeck.m in Sources */,
 				3BAE018E1B60D89C002C2891 /* Deck.m in Sources */,
 				3BAE01871B60D860002C2891 /* Card.m in Sources */,
