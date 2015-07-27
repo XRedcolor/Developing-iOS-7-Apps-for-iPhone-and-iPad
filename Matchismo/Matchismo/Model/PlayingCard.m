@@ -44,12 +44,16 @@
     NSInteger score = 0;
     
     if (1 == otherCards.count) {
-        PlayingCard *otherCard = [otherCards lastObject];
+        id card = [otherCards lastObject];
         
-        if (self.rank == otherCard.rank) {
-            score = 4;
-        } else if ([self.suit isEqualToString:otherCard.suit]) {
-            score = 1;
+        if ([card isKindOfClass:[PlayingCard class]]) {
+            PlayingCard *otherCard = (PlayingCard *)card;
+            
+            if (self.rank == otherCard.rank) {
+                score = 4;
+            } else if ([self.suit isEqualToString:otherCard.suit]) {
+                score = 1;
+            }
         }
     }
     
